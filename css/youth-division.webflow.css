@@ -863,9 +863,16 @@ body {
 	align-items: center;
 	font-size: 1.0em;
 	line-height: 1em;
-	/*display: flex;*/
 }
 
+.text-image-box {
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.0em;
+	line-height: 1em;
+	display: flex;
+}
 .subtitlu-proiectmare {
 	color: #fff;
 	text-align: center;
