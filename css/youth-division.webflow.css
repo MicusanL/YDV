@@ -791,21 +791,20 @@ body {
 
 .collection-item-3 {
 	width: calc(45% - 15em);
-	margin: 2em;
+	padding: 2em;
 	display: flex;
 }
 
 .image {
 	object-fit: cover;
-	width: 25.28em;
-	height: 18.89em;
 	margin-bottom: 1em;
+	height: auto;
 }
 
 .text-block-4 {
 	color: #fff;
 	margin-bottom: 1.39em;
-	font-size: 1.3vw;
+	font-size: 1.1vw;
 	font-weight: 700;
 	line-height: 1em;
 	text-decoration: none;
@@ -814,7 +813,7 @@ body {
 .paragraph,
 .text-block-5 {
 	color: #fff;
-	font-size: 1.3vw;
+	font-size: 0.8vw;
 	text-decoration: none;
 	line-height: 1.2;
 }
@@ -837,13 +836,14 @@ body {
 
 .block {
 	margin-bottom: 0;
-	padding-bottom: 13.54em;
+	padding-bottom: 7em;
 }
 
-.imagine-proiectmare {	
-    max-width: 70%;
-	height: 47.71em;
-	margin-bottom: 5.14em;	
+.imagine-proiectmare {
+  max-width: 35%;
+  height: auto;
+  display: block;
+  margin: 0 auto 5em; 
 }
 
 .titlu-proiectmare {
@@ -851,7 +851,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 2.3em;
-	font-size: 3.89em;
+	font-size: 2em;
 	font-weight: 700;
 	line-height: 0.8em;
 	display: flex;
@@ -859,12 +859,11 @@ body {
 
 .descriere-proiectmare {
 	color: #fff;
-	text-align: center;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.53em;
+	font-size: 1.0em;
 	line-height: 1em;
-	display: flex;
+	/*display: flex;*/
 }
 
 .subtitlu-proiectmare {
@@ -1491,8 +1490,7 @@ select {
 	}
 
 	.imagine-proiectmare {
-		width: auto;
-		height: auto;
+        max-width: 70%;
 	}
 
 	.titlu-proiectmare {
