@@ -893,6 +893,20 @@ body {
 	display: flex;
 }
 
+.project-images {
+  display: flex;
+  gap: 1em;
+  margin-top: 2em;
+  justify-content: center;
+}
+
+.project-images img {
+    width: 48%;
+    max-width: 10em;
+    height: auto;
+	object-fit: contain; 
+}
+
 .collection-item-4 {
 	flex-flow: column;
 	justify-content: center;
