@@ -103,20 +103,19 @@ body {
 .title-section {
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 11.81em;
+	margin-bottom: 5%;
 	display: flex;
 }
 
 .box-titleimagine {
-	width: 62.5em;
-	height: 34.28em;
-	margin-top: 13.82em;
+    height: 10%;
+    margin-top: 5%;
 }
 
 .imagine-title {
 	opacity: 0;
-	width: 62.5em;
-	height: 34.24em;
+	width: 70%;
+	height: 70%;
 }
 
 .desprenoi-sectiune {
@@ -147,7 +146,7 @@ body {
 
 .desprenoi-descriere {
 	text-align: left;
-	font-size: 1.94em;
+	font-size: 1.5em;
 	font-weight: 400;
 	line-height: 1em;
 }
