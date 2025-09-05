@@ -537,9 +537,9 @@ body {
 	flex-flow: column;
 	justify-content: flex-start;
 	align-items: center;
-	width: 87.92em;
-	height: 42.36em;
-	margin: 8.89em 6.18em 8.61em;
+	width: 50em;
+	height: 25em;
+	margin: 10% 5%;
 	display: flex;
 	transform: rotate(0);
 }
@@ -552,12 +552,12 @@ body {
 }
 
 .cartonascontactsubtitlu-box {
-	margin-top: 12.29em;
+	margin-top: 5em;
 }
 
 .cartonascontactsubtitlu {
 	text-transform: uppercase;
-	font-size: 5.28em;
+	font-size: 3em;
 	font-weight: 700;
 	line-height: 0.8em;
 }
@@ -574,17 +574,17 @@ body {
 }
 
 .cartonascontactcopyright-box {
-	grid-column-gap: 45.14em;
-	grid-row-gap: 45.14em;
+	grid-column-gap: 30em;
+	grid-row-gap: 30em;
 	justify-content: center;
 	align-items: center;
-	margin-top: 9.64em;
+	margin-top: 5em;
 	display: flex;
 }
 
 .copyright,
 .developername {
-	font-size: 1.11em;
+	font-size: 0.7em;
 }
 
 .div-block {
@@ -1374,6 +1374,8 @@ select {
 
 	.cartonascontact {
 		border-radius: 10px;
+		width: 80em;
+		height: 34em;
 	}
 
 	.cartonascontacttitlu {
