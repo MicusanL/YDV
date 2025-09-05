@@ -10,10 +10,15 @@
 </div>
 <div class="cartonascontactcopyright-box">
   <div class="copyright-box">
-	<div class="copyright">© Youth DiVsion Sibiu 2024</div>
-  </div>
-  <div class="developer-box">
-	<div class="developername">Website by Nils Ingversen</div>
+	<div class="copyright">© Youth DiVision Sibiu <span id="current-year"></span></div>
   </div>
 </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var yearSpan = document.getElementById('current-year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});
+</script>
