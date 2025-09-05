@@ -1,12 +1,16 @@
 $(document).ready(function() {
   $("#navbar-section").load("/html-resources/menu.html", function() {
     if (window.Webflow && Webflow.require) {
-      Webflow.require('ix2').init();
+      var ix2 = Webflow.require('ix2');
+      ix2.destroy();
+      ix2.init();
     }
   });
   $("#contact-section").load("/html-resources/contact-section.html", function() {
     if (window.Webflow && Webflow.require) {
-      Webflow.require('ix2').init();
+      var ix2 = Webflow.require('ix2');
+      ix2.destroy();
+      ix2.init();
     }
   });
   selectCurrentPageMenu();
