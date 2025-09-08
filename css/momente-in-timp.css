@@ -1,0 +1,102 @@
+.momenteintimp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)t;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em
+}
+
+.momenteintimp-grid img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.momenteintimp-grid img:hover {
+    transform: scale(1.01);
+    z-index: 1;
+}
+
+.img1 {
+    grid-area: 1 / 1 / 5 / 2;
+}
+
+.img2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.img3 {
+    grid-area: 2 / 2 / 5 / 3;
+}
+
+.img4 {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.img5 {
+    grid-area: 1 / 4 / 3 / 5;
+}
+
+.img6 {
+    grid-area: 3 / 3 / 5 / 5;
+}
+
+.img7 {
+    grid-area: 5 / 1 / 7 / 3;
+}
+
+.img8 {
+    grid-area: 5 / 3 / 8 / 4;
+}
+
+.img9 {
+    grid-area: 5 / 4 / 9 / 5;
+}
+
+.img10 {
+    grid-area: 7 / 1 / 9 / 2;
+}
+
+.img11 {
+    grid-area: 7 / 2 / 9 / 3;
+}
+
+.img12 {
+    grid-area: 8 / 3 / 9 / 4;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #E5E5E5;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
