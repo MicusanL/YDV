@@ -1,5 +1,15 @@
 $(document).ready(function () {
   $("#navbar-section").load("/html-resources/menu.html", function () {
+    // Fix menu links for projects subfolder
+    if (window.location.pathname.includes('/projects/')) {
+      $('.pages-box a').each(function() {
+        var href = $(this).attr('href');
+        if (href && !href.startsWith('http') && !href.startsWith('/')) {
+          $(this).attr('href', '../' + href);
+        }
+      });
+    }
+    
     if (window.Webflow && Webflow.require) {
       var ix2 = Webflow.require('ix2');
       ix2.destroy();
