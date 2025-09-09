@@ -830,6 +830,22 @@ body {
 	display: flex;
 }
 
+img:hover {
+	transform: scale(1.01);
+	z-index: 1;
+}
+
+.fade-in-vertically {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-vertically.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 .descriere-proiectmare {
 	color: #fff;
 	justify-content: center;
@@ -844,7 +860,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	font-size: small;
+	font-size: 1em;
 }
 
 .subtitlu-proiectmare {
@@ -1119,6 +1135,7 @@ select {
 
 	.text-image-box {
 		display: block;
+		font-size: small;
 	}
 
 	.namebox-socialmedia {
