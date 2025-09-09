@@ -113,9 +113,20 @@ body {
 }
 
 .imagine-title {
-	opacity: 0;
 	width: 70%;
 	height: 70%;
+	animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .desprenoi-sectiune {
