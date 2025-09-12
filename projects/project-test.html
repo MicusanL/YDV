@@ -110,6 +110,34 @@
       position: relative;
       overflow: hidden;
     }
+
+    @media (max-width: 480px) {
+      .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .titlu-proiectmare {
+        font-size: clamp(2rem, 15vw, 3.5rem);
+        letter-spacing: 1px;
+        margin: 10px;
+      }
+
+      .imagine-proiectmare {
+        clip-path: unset;
+        min-width: 90%;
+      }
+
+      .image-section::before {
+        visibility: hidden;
+      }
+
+      .descriere-proiectmarebox {
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 3px;
+      }
+    }
   </style>
 
 </head>
