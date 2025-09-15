@@ -116,6 +116,9 @@ body {
 	width: 70%;
 	height: 70%;
 	animation: fadeIn 1s ease-in forwards;
+	
+  display: block;
+  margin: 0 auto;
 }
 
 @keyframes fadeIn {
