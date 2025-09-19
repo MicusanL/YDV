@@ -218,11 +218,7 @@ body {
 }
 
 .chapter-title-home-box {
-	/* grid-column-gap: 8.06em; */
-	/* grid-row-gap: 8.06em; */
-	/* justify-content: flex-start; */
 	align-items: center;
-	/* padding-bottom: 0; */
 	padding-top: 5%;
 	display: flex;
 }
@@ -242,6 +238,7 @@ body {
 	padding-right: 0;
 	font-size: 2.22em;
 	font-weight: 600;
+	display: ruby-text;
 }
 
 .linie-valori {
@@ -406,7 +403,6 @@ body {
 
 .pozaultimulnostruproiect {
 	width: 30%;
-	margin-bottom: 5em;
 }
 
 .descriereultimulnostruproiect {
@@ -848,6 +844,26 @@ img:hover {
 	transform: translateY(0);
 }
 
+.fade-in-horizontally {
+	opacity: 0;
+	transform: translateX(-20px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-horizontally.visible {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.fade-in {
+	opacity: 0;
+	transition: opacity 1.5s ease-out;
+}
+
+.fade-in.visible {
+	opacity: 1;
+}
+
 .descriere-proiectmare {
 	color: #fff;
 	justify-content: center;
@@ -874,15 +890,9 @@ img:hover {
 }
 
 .descriere-proiectmarebox {
-	/* grid-column-gap: 3em; */
-	/* grid-row-gap: 3em; */
-	/* text-align: left; */
-	/* flex-flow: column; */
-	/* justify-content: center; */
 	align-items: center;
 	max-width: 82.08em;
 	margin-bottom: 3.4em;
-	/* display: flex; */
 }
 
 .project-images {
