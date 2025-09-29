@@ -548,7 +548,7 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 	width: 50em;
-	height: 25em;
+	height: auto;
 	margin: 4em auto;
 	display: flex;
 	transform: rotate(0);
@@ -584,18 +584,13 @@ body {
 }
 
 .cartonascontactcopyright-box {
-	grid-column-gap: 30em;
-	grid-row-gap: 30em;
+	grid-column-gap: 20em;
 	justify-content: center;
 	align-items: center;
 	margin-top: 5em;
 	display: flex;
 }
 
-.copyright,
-.developername {
-	font-size: 0.7em;
-}
 
 .div-block {
 	width: 1440px;
@@ -1429,13 +1424,12 @@ select {
 
 	.cartonascontactcopyright-box {
 		grid-column-gap: 35em;
-		grid-row-gap: 35em;
-		margin-top: 3.84em;
+
 	}
 
 	.copyright,
 	.developername {
-		font-size: 1.2em;
+		font-size: 1.3em;
 	}
 
 	.echipanoastra-descrierebox {
@@ -1601,73 +1595,56 @@ select {
 }
 
 .partners-section {
-  background-color: #e5e5e5;
-  padding: 2em;
-  margin: 0 auto;
-  overflow: hidden;
+	background-color: #e5e5e5;
+	padding: 1em;
+	overflow: hidden;
 }
 
 .carusel-partners {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	margin-bottom: 2em;
 }
 
 .partners-container {
-  display: inline-flex;
-  align-items: center;
-  gap: 8em;
-  animation: slidePartners 22s linear infinite;
-  will-change: transform;
-  width: max-content;
-  flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	gap: 10em;
+	animation: scroll 40s linear infinite;
+	width: fit-content;
 }
 
 .partner-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 250px;
-  flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 20em;
+	flex: 0 0 auto;
 }
 
 .partner-logo img {
-  width: 250px;
-  height: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-  -webkit-filter: drop-shadow(0 0 5px #777);
-  filter: drop-shadow(0 0 5px #777);
-  max-width: none;
+	width: 20em;
+	height: auto;
+	object-fit: contain;
+	transition: transform 0.3s ease;
+	filter: drop-shadow(0 0 5px #777);
 }
 
-.partner-logo img:hover {
-  transform: scale(1.1);
-}
-
-@keyframes slidePartners {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-/* accessibility: respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .partners-container { animation: none; }
-}
-
-@media screen and (max-width: 479px) {
-	.partners-container {
-		gap: 4em;
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
 	}
 
-	.partner-logo {
-		min-width: 150px;
+	100% {
+		transform: translateX(calc(-50%));
 	}
+}
 
-	.partner-logo img {
-		width: 150px;
-	}
+/* Optional: Pause on hover */
+.carusel-partners:hover .partners-container {
+	animation-play-state: paused;
 }
 
 .stripe-overlay {
