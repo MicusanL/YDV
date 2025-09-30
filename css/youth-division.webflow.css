@@ -414,6 +414,7 @@ body {
 .echipaydv-section {
 	opacity: 1;
 	background-color: #8d4ba3;
+	padding-bottom: 5%;
 }
 
 .titluechipaydv-box {
@@ -535,7 +536,6 @@ body {
 }
 
 .cartonascontact-section {
-	margin-top: 3em;
 	justify-content: center;
 	align-items: center;
 	display: grid;
@@ -624,8 +624,7 @@ body {
 }
 
 .section-white-background {
-	background-color: #FFFFFFF0;
-	border-radius: 0.83em;
+	background-color: #e5e5e5F0;
 }
 
 .echipanoastra-descrierebox {
@@ -690,6 +689,7 @@ body {
 
 .momenteintimp-box {
 	margin-top: 0;
+	margin-bottom: 5%;
 	padding-top: 216px;
 	padding-left: 7.08em;
 	padding-right: 7.08em;
