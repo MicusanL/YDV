@@ -592,6 +592,11 @@ body {
 }
 
 
+.copyright,
+.developername {
+	margin-bottom: 0.5em;
+}
+
 .div-block {
 	width: 1440px;
 }
@@ -823,7 +828,7 @@ body {
 	display: flex;
 }
 
-img:hover {
+a img:hover {
 	transform: scale(1.01);
 	z-index: 1;
 }
@@ -980,6 +985,12 @@ img:hover {
 	grid-auto-columns: 1fr;
 	display: block;
 }
+
+.momenteintimp-grid img:hover {
+	transform: scale(1.01);
+	z-index: 1;
+}
+
 
 .img9 {
 	object-position: 70% 50%;
@@ -1605,7 +1616,6 @@ select {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	margin-bottom: 2em;
 }
 
 .partners-container {
@@ -1620,12 +1630,12 @@ select {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-width: 15em;
+	min-width: 10em;
 	flex: 0 0 auto;
 }
 
 .partner-logo img {
-	width: 15em;
+	width: 10em;
 	height: auto;
 	object-fit: contain;
 	transition: transform 0.3s ease;
