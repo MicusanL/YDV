@@ -414,7 +414,6 @@ body {
 .echipaydv-section {
 	opacity: 1;
 	background-color: #8d4ba3;
-	padding-bottom: 5%;
 }
 
 .titluechipaydv-box {
@@ -536,6 +535,7 @@ body {
 }
 
 .cartonascontact-section {
+	margin-top: 3em;
 	justify-content: center;
 	align-items: center;
 	display: grid;
