@@ -1608,12 +1608,14 @@ select {
 .partners-section {
 	background-color: #e5e5e5;
 	padding: 1em;
-	overflow: hidden;
+	overflow: hidden;	
+    width: 95%;
+    margin: 2em auto;
+    border-radius: 22px;
 }
 
 .carusel-partners {
 	display: block;
-	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
