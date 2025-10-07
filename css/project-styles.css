@@ -1,0 +1,110 @@
+.is-project {
+  background-image: url('../images/Frame.svg');
+  background-repeat: no-repeat;
+}
+
+.collection-list-wrapper-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  min-height: 300px;
+  position: relative;
+}
+
+.title-section {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.titlu-proiectmare {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(45deg, #9646ab, #33bacf, #c7dce1, #8767a7);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease-in-out infinite;
+  text-shadow: 0 0 30px rgba(255, 107, 107, 0.3);
+  position: relative;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.imagine-proiectmare {
+  clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 0% 100%);
+  margin: 0 5em;
+}
+
+.image-section::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: 10px;
+  bottom: 50px;
+  background: linear-gradient(45deg, #9646ab, #33bacf);
+  clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 0% 100%);
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 5px;
+}
+
+.image-section {
+  flex: 0 0 100%;
+}
+
+.descriere-proiectmarebox {
+  background: linear-gradient(45deg, #9646ab20, #33bacf20);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 40px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .titlu-proiectmare {
+    font-size: clamp(2rem, 15vw, 3.5rem);
+    letter-spacing: 1px;
+    margin: 10px;
+  }
+
+  .imagine-proiectmare {
+    clip-path: unset;
+    min-width: 90%;
+  }
+
+  .image-section::before {
+    visibility: hidden;
+  }
+
+  .descriere-proiectmarebox {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+  }
+}
