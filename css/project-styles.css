@@ -88,7 +88,6 @@
   }
 
   .titlu-proiectmare {
-    font-size: clamp(2rem, 15vw, 3.5rem);
     letter-spacing: 1px;
     margin: 10px;
   }
