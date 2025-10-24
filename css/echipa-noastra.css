@@ -1,16 +1,16 @@
 .echipanoastra-section {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-	padding: 5% 10%;
+    padding: 5% 10%;
     margin: 5%;
     position: relative;
     overflow: hidden;
     background: linear-gradient(45deg, #9646ab70, #33bacf90);
     backdrop-filter: blur(10px);
     grid-column-gap: 5%;
-	justify-content: center;
-	align-items: center;
-	display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .echipanoastra-descrierebox {
@@ -38,6 +38,7 @@
 
 .echipanoastra-imagine {
     border-radius: 0.83em;
+    border: 1px solid #6bd4e420;
     max-height: 600px;
 }
 
@@ -49,6 +50,11 @@
 
 .echipanoastra-pozaboxwhite {
     margin-right: 8.33em;
+}
+
+.boxnavbar {
+    height: 5em;
+    margin-bottom: 3em;
 }
 
 
@@ -87,6 +93,11 @@
 
     .echipanoastra-descriere {
         font-size: 1.8em;
+    }
+
+    .boxnavbar {
+        height: 5em;
+        margin-bottom: 10em;
     }
 
 }
