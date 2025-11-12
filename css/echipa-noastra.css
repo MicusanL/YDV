@@ -18,20 +18,18 @@
     justify-content: center;
     align-items: center;
     width: 38.4em;
-    margin-left: 0;
-    margin-right: 5%;
+    /* margin-left: 0; */
     display: flex;
     position: static;
     color: #fff;
 }
 
 .echipanoastra-pozabox {
-    margin-left: 8.33em;
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 .echipanoastra-descriere {
-    text-align: center;
+    text-align: left;
     font-size: 1.3em;
     line-height: 1em;
 }
@@ -43,13 +41,9 @@
 }
 
 .echipanoastra-descriere {
-    text-align: center;
+    text-align: left;
     font-size: 1em;
     line-height: 1.3;
-}
-
-.echipanoastra-pozaboxwhite {
-    margin-right: 8.33em;
 }
 
 .boxnavbar {
