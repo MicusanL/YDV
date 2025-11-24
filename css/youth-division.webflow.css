@@ -1231,6 +1231,11 @@ select {
 
 	.pageslink-navbar {
 		font-size: 1.9em;
+		transform: none;
+	}
+
+	.pageslink-navbar:hover {
+		transform: none;
 	}
 
 	.pageslink-navbar.is-hoeacasa.w--current {
