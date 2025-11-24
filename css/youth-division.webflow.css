@@ -252,7 +252,7 @@ body {
 	grid-row-gap: 5.28em;
 	justify-content: flex-start;
 	align-items: center;
-	height: 11.18em;
+	height: 8em;
 	padding-left: 5.28em;
 	display: flex;
 }
@@ -260,14 +260,14 @@ body {
 .cerc-carusel {
 	background-color: #fff;
 	border-radius: 100000000em;
-	width: 2.01em;
-	min-width: 2.01em;
-	height: 2.01em;
+	width: 1.5em;
+	min-width: 1.5em;
+	height: 1.5em;
 }
 
 .text-carusel {
 	color: #fff;
-	font-size: 5em;
+	font-size: 3em;
 	font-weight: 700;
 }
 
