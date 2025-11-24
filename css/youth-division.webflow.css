@@ -26,6 +26,7 @@ body {
 	top: 2.64em;
 	left: 2.08em;
 	right: 2.08em;
+	z-index: 10000;
 }
 
 .socialmedia-box {
@@ -45,8 +46,76 @@ body {
 	display: flex;
 }
 
+.pagebox-name {
+	position: relative;
+}
+
 .pagebox-name:hover {
 	color: #8d4ba3;
+}
+
+.pagebox-name.has-dropdown .dropdown-toggle {
+	cursor: pointer;
+	user-select: none;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.95);
+	border-radius: 8px;
+	padding: 0.5em 0;
+	margin-top: 0.5em;
+	min-width: 12em;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	z-index: 9999;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	transform: translateX(-50%) translateY(-10px);
+}
+
+.pagebox-name.has-dropdown.active .dropdown-menu {
+	display: block;
+	opacity: 1;
+	pointer-events: all;
+	transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-item {
+	display: block;
+	color: #fff;
+	line-height: 1em;
+	text-decoration: none;
+	padding: 0.8em 1.5em;
+	transition: all 0.3s ease;
+	white-space: nowrap;
+}
+
+.dropdown-item:hover {
+	color: #8d4ba3;
+	background-color: rgba(141, 75, 163, 0.1);
+}
+
+.dropdown-toggle {
+	display: inline-block;
+	position: relative;
+	transition: transform 0.4s ease;
+}
+
+.dropdown-toggle::after {
+	content: '▼';
+	font-size: 0.48em;
+	margin-left: 0.5em;
+	vertical-align: middle;
+	transition: transform 0.3s ease;
+}
+
+.pagebox-name.has-dropdown.active .dropdown-toggle::after {
+	transform: rotate(180deg);
 }
 
 .linkname-socialmedia {
@@ -76,15 +145,17 @@ body {
 
 .pageslink-navbar {
 	color: #fff;
-	font-size: 1.39em;
+	font-size: 1.11em;
 	line-height: 1em;
 	text-decoration: none;
+	transition: color 0.3s ease, transform 0.4s ease;
 }
 
 .pageslink-navbar:hover,
 .pageslink-navbar.w--current:hover {
 	color: #8d4ba3;
 	text-decoration: none;
+	transform: scale(1.02);
 }
 
 .pageslink-navbar.is-hoeacasa.w--current {
@@ -105,6 +176,8 @@ body {
 	align-items: center;
 	margin-bottom: 5%;
 	display: flex;
+	position: relative;
+	z-index: 1;
 }
 
 .box-titleimagine {
@@ -783,8 +856,9 @@ body {
 }
 
 a img:hover {
-	transform: scale(1.01);
+	transform: scale(1.005);
 	z-index: 1;
+	transition: transform 0.5s ease;
 }
 
 .fade-in-vertically {
@@ -1118,10 +1192,27 @@ select {
 	.pagebox-name {
 		font-size: 1.8vw;
 		line-height: 1em;
+		position: relative;
 	}
 
 	.pagebox-name:hover {
 		color: #8d4ba3;
+	}
+
+	.dropdown-menu {
+		position: static;
+		transform: none !important;
+		margin-top: 0.5em;
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+
+	.pagebox-name.has-dropdown.active .dropdown-menu {
+		transform: none !important;
+	}
+
+	.dropdown-item {
+		font-size: 1.6em;
+		padding: 0.6em 1em;
 	}
 
 	.imagine-title {

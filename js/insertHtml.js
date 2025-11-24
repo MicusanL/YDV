@@ -15,6 +15,8 @@ $(document).ready(function () {
       ix2.destroy();
       ix2.init();
     }
+    
+    initDropdowns();
   });
   $("#contact-section").load("/html-resources/contact-section.html", function () {
     if (window.Webflow && Webflow.require) {
@@ -29,6 +31,37 @@ $(document).ready(function () {
   });
   selectCurrentPageMenu();
 });
+
+function initDropdowns() {
+  // Handle dropdown toggle clicks
+  $('.pagebox-name.has-dropdown .dropdown-toggle').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    var $parent = $(this).closest('.pagebox-name.has-dropdown');
+    var isActive = $parent.hasClass('active');
+    
+    // Close all dropdowns
+    $('.pagebox-name.has-dropdown').removeClass('active');
+    
+    // Toggle current dropdown
+    if (!isActive) {
+      $parent.addClass('active');
+    }
+  });
+  
+  // Close dropdowns when clicking outside
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('.pagebox-name.has-dropdown').length) {
+      $('.pagebox-name.has-dropdown').removeClass('active');
+    }
+  });
+  
+  // Prevent dropdown from closing when clicking inside the menu
+  $('.dropdown-menu').on('click', function(e) {
+    e.stopPropagation();
+  });
+}
 
 function selectCurrentPageMenu() {
   if ($('.pages-box').is(':visible')) {
