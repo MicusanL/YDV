@@ -137,7 +137,7 @@ body {
 	display: block;
 }
 
-.body.is-proiecte {
+.body.frame2 {
 	background-image: url('../images/Frame-2.png');
 	background-position: 0 0;
 	background-size: cover;
@@ -696,21 +696,14 @@ body {
 	color: #fff;
 }
 
-.main.is-echipa {
+.main.frame {
 	background-image: url('../images/Frame.svg');
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.main.is-momente {
-	background-image: url('../images/Frame.png');
-	background-position: 0 0;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.main.is-proiecte {
+.main {
 	-webkit-text-fill-color: inherit;
 	background-clip: border-box;
 }

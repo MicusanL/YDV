@@ -1,12 +1,12 @@
 /* Project Grid Layout */
-.projects-grid {
+.grid {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.project-cards {
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   gap: 30px;
@@ -14,9 +14,14 @@
 }
 
 /* Card Styles */
-.project-card {
+.item {
   perspective: 1000px;
   height: 500px;
+}
+
+.backstage-item {
+   height: 15em;
+   width: 30em;
 }
 
 .card-inner {
@@ -29,7 +34,7 @@
   cursor: pointer;
 }
 
-.project-card:hover .card-inner {
+.item:hover .card-inner {
   transform: rotateY(180deg);
 }
 
@@ -76,6 +81,18 @@
   line-height: 1;
 }
 
+.report-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .card-content {
   height: 100%;
   display: flex;
@@ -111,7 +128,7 @@
   overflow-y: auto;
 }
 
-.project-details {
+.details {
   font-size: 0.85em;
   color: #777;
   margin: 15px 0;
@@ -134,19 +151,24 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 479px) {
-  .projects-grid {
+  .grid {
     padding: 5px;
   }
 
-  .project-cards {
+  .cards {
     grid-template-columns: 1fr;
     gap: 15px;
     padding: 10px;
   }
 
-  .project-card {
+  .item {
     height: 350px;
     margin-bottom: 15px;
+  }
+
+  .backstage-item {
+    height: 250px;
+    width: 100%;
   }
 
   .card-title {
@@ -164,7 +186,7 @@
     line-height: 1.4;
   }
 
-  .project-details {
+  .details {
     font-size: small;
     margin: 10px 0;
   }
@@ -173,5 +195,9 @@
     padding: 8px 14px;
     font-size: small;
     margin-top: 10px;
+  }
+
+  .report-year {
+    font-size: 5em;
   }
 }
