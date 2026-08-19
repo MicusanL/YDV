@@ -24,7 +24,7 @@
 }
 
 .titlu-proiectmare {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(3rem, 6vw, 6rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
